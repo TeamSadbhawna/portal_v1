@@ -2,415 +2,70 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Sadbhawna</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.css">
-  <script src="assets/js/modernizr-2.6.2.min.js"></script>
+  <title>Login Page</title>
+
+  <!-- Favicon -->
   <link rel="icon" href="assets/images/favicon.png">
-  <script src="https://kit.fontawesome.com/8f1434b1ae.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <!-- Css file -->
+  <link rel="stylesheet" href="assets/css/loginstyle.css">
 </head>
 
 <body>
-  <header class="main-header">
-
-    <nav class="navbar navbar-static-top">
-      <div class="navbar-main">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <h2>Sadbhawna - Fighting Covid-19 Together</h2>
+  <div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+      <div class="user_card">
+        <div class="d-flex justify-content-center">
+          <div class="brand_logo_container">
+            <img src="assets/images/logo.png" class="brand_logo" alt="Logo">
           </div>
-          <div id="navbar" class="navbar-collapse collapse pull-right">
-            <ul class="nav navbar-nav">
-              <li><a class="is-active" href="#home">Home</a></li>
-              <li><a href="#vision">Our Vision</a></li>
-              <li><a href="#resources">Resources</a></li>
-              <li><a href="#about">About</a></li>
-            </ul>
+        </div>
+        <div class="d-flex justify-content-center form_container">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+              <input type="text" name="" class="form-control input_user" value="" placeholder="User Name">
+            </div>
+            <div class="input-group mb-2">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
+              </div>
+              <input type="password" name="" class="form-control input_pass" value="" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                <label class="custom-control-label" for="customControlInline">Remember me</label>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3 login_container">
+              <button type="button" name="button" class="btn login_btn">Login</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="setup" class="mt-4">
+          <div class="d-flex justify-content-center links">
+            Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+          </div>
+          <div class="d-flex justify-content-center links">
+            <a href="#">Forgot your password?</a>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
-
-
-<section id="home">
-  <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#homeCarousel" data-slide-to="1"></li>
-      <li data-target="#homeCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img id="car-img" src="assets/images/slider/home-slider-1.jpg" alt="">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2 class="carousel-title bounceInDown animated slow">Because they need your help.</h2>
-            <h4 class="carousel-subtitle bounceInUp animated slow ">Do not let them down</h4>
-            <a href="#resources" id="car-btn" class="btn btn-lg btn-secondary bounceInUp animated slow">Let's Help!</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="item ">
-        <img id="car-img" src="assets/images/slider/home-slider-2.jpg" alt="">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2 class="carousel-title bounceInDown animated slow">Together we can improve their lives</h2>
-            <h4 class="carousel-subtitle bounceInUp animated slow"> So let's do it !</h4>
-            <a href="#resources" id="car-btn" class="btn btn-lg btn-secondary bounceInUp animated slow">Let's Help!</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item ">
-        <img id="car-img" src="assets/images/slider/home-slider-3.jpg" alt="">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2 class="carousel-title bounceInDown animated slow">A small helping hand may save life.</h2>
-            <h4 class="carousel-subtitle bounceInUp animated slow">You can make the diffrence !</h4>
-            <a href="#resources" id="car-btn" class="btn btn-lg btn-secondary bounceInUp animated slow">Let's Help!</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-
-    <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
-      <span class="fa fa-angle-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-
-    <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
-      <span class="fa fa-angle-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-</section>
 
-  <hr class="hori">
-
-<!-- Vision Section -->
-
-  <section id="vision">
-    <div class="row" style="margin-right: 0px;">
-
-      <div class="col-lg-4 vision-box">
-        <i class="far fa-eye icon  fa-4x"></i>
-        <h3>VISION</h3>
-        <h5>We Care About Others!</h5>
-        <hr>
-        <p>To utilize left out resources of recovered COVID-19
-          patient. It may be medicines, relief creams etc.</p>
-      </div>
-
-      <div class="col-lg-4 vision-box">
-        <i class="fas fa-bullseye icon  fa-4x"></i>
-        <h3>MISSION</h3>
-        <h5>We Fight Together for Others!</h5>
-        <hr>
-        <p>
-          To help out needy or poor people or anyone
-          who is in emergency situation. A small helping hand
-          may save someone's life.
-        </p>
-      </div>
-
-      <div class="col-lg-4 vision-box ">
-        <i class="fas fa-people-carry icon  fa-4x"></i>
-        <h3>HELP & SUPPORT</h3>
-        <h5>We Stand Together For Others! </h5>
-        <hr>
-        <p>Great opportunities to help others seldom come,
-          but small ones surround us every day.</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="hori">
-
-  <section class="about-section mt-5" id="resources">
-    <div class="container">
-      <div class="text-center">
-        <h1 class="section-heading text-uppercase">Resources</h1>
-        <hr>
-      </div>
-
-      <!-- ======= RESOURCES Section ======= -->
-      <section class="about">
-        <div class="container-fluid">
-
-          <div class="row">
-            <div class="col-xl-5 col-lg-6 d-flex justify-content-center align-items-stretch" data-aos="fade-right">
-              <img id="res-img" src="assets/images/hand.jpg" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left" style="margin-top:50px;">
-
-              <h2>Just fill out this Google Form &
-                your given information will be displayed here shortly.</h2>
-              <hr>
-              <p>*For testing purposes, wesbite only available for Chaibasa region.</p>
-
-              <div>
-                <a class="btn" id="about-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe4dPIAUTFyzaFJsecvGMGulpJlziHI2TevRvIW0PwND8kV1w/viewform?usp=sf_link" role="button">Fill Form</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="table-responsive-lg">
-            <table class="table table-hover table-bordered">
-              <tr class="text-white bg-dark">
-                <th scope="col">S/N</th>
-                <th scope="col">NAME</th>
-                <th scope="col">ADDRESS</th>
-                <th scope="col">CONTACT NO.</th>
-                <th scope="col">RESOURCES</th>
-              </tr>
-              <tbody>
-                <tr class="bg-success">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="text-white bg-dark">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="bg-warning">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="text-white bg-dark">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="bg-danger">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="text-white bg-dark">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="bg-info">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="text-white bg-dark">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="bg-info">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="text-white bg-dark">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="bg-info">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="text-white bg-dark">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="bg-info">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="text-white bg-dark">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="bg-info">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr class="text-white bg-dark">
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-        </div>
-      </section>
-  </section>
-
-  <hr class="hori">
-
-<!-- ABOUT SECTION -->
-  <section id="about">
-    <footer class="main-footer">
-      <div class="footer-top">
-      </div>
-      <div class="footer-main">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="footer-col">
-                <h4 class="footer-title">About us <span class="title-under"></span></h4>
-                <div class="footer-content">
-                  <p>
-                    <strong>Sadbhawna</strong> is a web portal where recovered COVID-19 patient can
-                    share their left out resources such as medicines, relief creams, supplements etc.
-                  <p>
-                    This website was built overnight by me to help others. It may contains bugs and need huge improvements.
-                    Patches are on it's way. All suggestions are Welcomed & Appreciated! Soon I will be implementing backend frameworks to this wesbite.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="footer-col">
-                <h4 class="footer-title">Other Websites <span class="title-under"></span></h4>
-                <div class="footer-content">
-                  <ul class="tweets list-unstyled">
-                    <li class="tweet">
-                      <a href="https://www.mohfw.gov.in/">Ministry Of Health and Family Welfare</a>
-                    </li>
-                    <li class="tweet">
-                      <a href="https://www.covid19india.org/">Covid-19 Tracker</a>
-                    </li>
-                    <li class="tweet">
-                      <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Central Helpline Number</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-md-4">
-              <div class="footer-col">
-                <h4 class="footer-title">Contact us <span class="title-under"></span></h4>
-                <div class="footer-content">
-                  <div class="footer-form">
-                    <div class="footer-form">
-                      <form action="https://formspree.io/f/mwkalpjz" method="post">
-                        <div class="form-group">
-                          <input type="text" name="name" class="form-control" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                          <input type="email" name="email" class="form-control" placeholder="E-mail" required>
-                        </div>
-                        <div class="form-group">
-                          <textarea name="message" class="form-control" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="form-group alerts">
-                          <div class="alert alert-success" role="alert">
-                          </div>
-                          <div class="alert alert-danger" role="alert">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <button type="submit" class="btn btn-submit pull-right">Send message</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-
-        <div class="container text-right">
-          Designed and Developed with ❤️ by <a href="https://www.linkedin.com/in/salokya-kumar-b75021204/">Salokya Kumar</a>
-        </div>
-      </div>
-
-    </footer>
-  </section>
-
-  <!--  Scripts
-    ================================================== -->
-
-  <!-- jQuery -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>')
-  </script>
-
-  <!-- Bootsrap javascript file -->
-  <script src="assets/js/bootstrap.min.js"></script>
-
-  <!-- owl carouseljavascript file -->
-  <script src="assets/js/owl.carousel.min.js"></script>
-
-  <!-- Template main javascript -->
-  <script src="assets/js/main.js"></script>
-
+<!-- Scripts -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>
 
