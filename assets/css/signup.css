@@ -76,11 +76,3 @@ html {
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
   background-color: #c0392b !important;
 }
-
-#setup{
-  border-top: 5px;
-  border-bottom: 2px;
-  border-color:  #1f76bd;
-  border-width: medium;
-  border-style: solid;
-}
