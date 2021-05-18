@@ -8,5 +8,3 @@
 - improve UI/UX
 - and a lot more.....🤐
 
-
-#### Page Link -  https://teamsadbhawna.github.io/portal/
