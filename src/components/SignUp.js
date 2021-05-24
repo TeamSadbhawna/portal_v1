@@ -104,7 +104,7 @@ class SignUpForm extends Component {
       email === "" ||
       username === "" ||
       city === "" ||
-      phone.length === 9;
+      phone.length !== 10;
 
     let passlevel = "Password must contain at least 8 characters", passlevelstyle={color: "black"};
     if (passwordOne.length < 8) {
