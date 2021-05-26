@@ -50,9 +50,9 @@ class PasswordChangeForm extends Component {
 
     const isInvalid = passwordOne !== passwordTwo || passwordOne === "";
 
-    let passlevel = "Password must contain at least 8 characters", passlevelstyle={color: "black"};
+    let passlevel = "Password must contain at least 8 characters or digits", passlevelstyle={color: "black"};
     if (passwordOne.length < 8) {
-      passlevel = "Password must contain at least 8 characters ";
+      passlevel = "Password must contain at least 8 characters or digits";
       passlevelstyle={color: "red"}
     } else if (passwordOne.length <= 10 && passwordOne.length >= 8) {
       passlevel = "Weak";
@@ -64,7 +64,7 @@ class PasswordChangeForm extends Component {
       passlevel = "Strong";
       passlevelstyle={color:"green"}
     } else {
-      passlevel = "Password must contain at least 8 characters";
+      passlevel = "Password must contain at least 8 characters or digits";
       passlevelstyle={color: "black"};
     }
     return (

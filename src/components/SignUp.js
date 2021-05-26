@@ -10,7 +10,7 @@ const SignUpPage = ({ history }) => (
   <div>
     <div className="div-flex">
       <center>
-        <img className="authlogo" src="./images/logobanner.png" style={{height: "55px"}} alt="My logo" />
+        <Link to={routes.LANDING}><img className="authlogo" src="./images/logobanner.png" style={{height: "55px"}} alt="My logo" /></Link>
         <hr/>
         <SignUpForm history={history} />
         <br/>
@@ -56,10 +56,13 @@ class SignUpForm extends Component {
         db.doCreateUser(authUser.user.uid, username, email, phone, city.toUpperCase())
           .then(() => {
             alert("Welcome " + username + "!\nwe have succesfully created your account. Now you can SignIn to Sadbhawna.");
+          })
+          .then(()=> {
+            auth.doSignInWithEmailAndPassword(email, passwordOne);
             this.setState({
               ...INITIAL_STATE
             });
-            history.push(routes.SIGN_IN);
+            history.push(routes.HOME);
           })
           .catch(error => {
             this.setState(byPropKey("error", error));
@@ -106,9 +109,9 @@ class SignUpForm extends Component {
       city === "" ||
       phone.length !== 10;
 
-    let passlevel = "Password must contain at least 8 characters", passlevelstyle={color: "black"};
+    let passlevel = "Password must contain at least 8 characters or digits", passlevelstyle={color: "black"};
     if (passwordOne.length < 8) {
-      passlevel = "Password must contain at least 8 characters ";
+      passlevel = "Password must contain at least 8 characters or digits";
       passlevelstyle={color: "red"}
     } else if (passwordOne.length <= 10 && passwordOne.length >= 8) {
       passlevel = "Weak";
@@ -120,7 +123,7 @@ class SignUpForm extends Component {
       passlevel = "Strong";
       passlevelstyle={color:"green"}
     } else {
-      passlevel = "Password must contain at least 8 characters";
+      passlevel = "Password must contain at least 8 characters or digits";
       passlevelstyle={color: "black"};
     }
     
