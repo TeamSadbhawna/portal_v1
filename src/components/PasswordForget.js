@@ -9,7 +9,7 @@ import * as routes from "../constants/routes";
 const PasswordForgetPage = () => (
   <div className="div-flex">
     <center>
-      <img className="authlogo" src="./images/logobanner.png" style={{height: "55px"}} alt="My logo" />
+      <Link to={routes.LANDING}><img className="authlogo" src="./images/logobanner.png" style={{height: "55px"}} alt="My logo" /></Link>
       <hr/>
       <PasswordForgetForm />
       <br/>

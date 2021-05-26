@@ -1,26 +1,33 @@
 import '../css/style.css';
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Label, Input, Alert, Container } from "reactstrap";
-import { withRouter } from "react-router-dom";
-
+import { Link, withRouter } from "react-router-dom";
 import { SignUpLink } from "./SignUp";
 import { PasswordForgetLink } from "./PasswordForget";
 import { auth, db } from "../firebase";
 import * as routes from "../constants/routes";
 import Aboutreact from '../about';
 
+
+const Mystyle = {color: "white", fontSize: "18px", padding: "10px"};
+
 const SignInPage = ({ history }) => {
   return (
     <div className="div-flex">
       <center>
-        <img className="authlogo" src="./images/logobanner.png" style={{height: "55px"}} alt="My logo" />
+      <Link to={routes.LANDING}><img className="authlogo" src="./images/logobanner.png" style={{height: "55px"}} alt="My logo" /></Link>
         <hr/>
-      </center>
-        <SignInForm history={history} />
-      <center>
+        </center>
+        <center>
+          
+          <SignInForm history={history} />
         <SignUpLink />
         <PasswordForgetLink />
         <br/>
+        <Button style={{backgroundColor: "darkblue", color: "white", fontSize:"20px"}}>
+            <Link style={Mystyle} to={routes.LANDING}>Back to Home</Link>
+        </Button>
+        <hr/>
         <Aboutreact />
       </center>
     </div>

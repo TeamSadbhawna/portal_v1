@@ -15,11 +15,12 @@ import SignInPage from "./SignIn";
 import PasswordForgetPage from "./PasswordForget";
 import HomePage from "./Home";
 import AccountPage from "./Account";
+import LandingPage from "./Landing";
 import withAuthentication from "./withAuthentication";
 
 const App = () => (
   <BrowserRouter>
-      <Route exact path={routes.HOME} component={HomePage} />
+      <Route exact path={routes.LANDING} component={LandingPage} />
       <Route exact path={routes.SIGN_UP} component={SignUpPage} />
       <Route exact path={routes.SIGN_IN} component={SignInPage} />
       <Route
@@ -27,6 +28,7 @@ const App = () => (
         path={routes.PASSWORD_FORGET}
         component={PasswordForgetPage}
       />
+      <Route exact path={routes.HOME} component={HomePage} />
       <Route exact path={routes.ACCOUNT} component={AccountPage} />
   </BrowserRouter>
 );

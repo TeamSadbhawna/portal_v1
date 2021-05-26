@@ -54,7 +54,7 @@ class AccountPage extends Component {
           <Container>
           <center>
             <div className="div-flex">
-              <img className="authlogo" style={{height: "55px"}} src="./images/logobanner.png" alt="My logo" />
+            <Link to={routes.LANDING}><img className="authlogo" src="./images/logobanner.png" style={{height: "55px"}} alt="My logo" /></Link> 
               <hr/>
                 <Button style={{fontSize: "18px", backgroundColor: "#1f76bd", height:"40px"}}><Link to={routes.HOME} style={{fontSize: "18px", color: "white", textDecoration: "none"}} >Go back to home</Link></Button>
               <div>

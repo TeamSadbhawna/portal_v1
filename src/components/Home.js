@@ -28,7 +28,7 @@ class HomePage extends Component {
   render() {
     const { users, username, loading } = this.state;
     return (
-      <div>
+      <div style={{backgroundColor: "black"}}>
         <Navigation />
         <Scrollreact />
         <Datareact />

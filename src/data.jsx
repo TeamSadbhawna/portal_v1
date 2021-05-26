@@ -4,9 +4,9 @@ import './css/style.css';
 import './css/bootstrap.css';
 import './css/bootstrap.min.css';
 import './css/font-awesome.min.css';
-import { Table } from "reactstrap";
-import { auth, db } from './firebase/firebase';
+import { db } from './firebase/firebase';
 import React, { Component } from "react";
+import { ListGroup, Card } from 'react-bootstrap';
 
 const Datareact = () => {
     return (
@@ -35,7 +35,7 @@ class DatareactBase extends Component {
     }
 
     render() {
-        return  <div>
+        return  <div style={{ backgroundColor: "black"}}>
                     <section className="about-section mt-5" id="resources">
                         <div className="container">
                             <div className="text-center">
@@ -43,7 +43,7 @@ class DatareactBase extends Component {
                                 <h4 style={{color:"white"}}>Always refer to doctor first</h4>
                                 <hr></hr>
                                 <section className="about">
-                                <div className="container-fluid">
+                                <div className="container-fluid" style={{ backgroundColor: "black"}}>
                                     <div className="row">
                                         <div className="col-xl-5 col-lg-6 d-flex justify-content-center align-items-stretch" data-aos="fade-right">
                                             <img id="res-img" src="./images/hand.jpg" class="img-fluid" alt="" />
@@ -57,31 +57,24 @@ class DatareactBase extends Component {
                                     </div>
                                 </section>
                             </div>
-                            <div className="table-responsive-lg">
+                            <ListGroup style={{ backgroundColor: "black"}} >
                                 <h2 style={{color:"white", textAlign: "center"}}>Recent Posts</h2>
-                                    <Table responsive >
-                                        <thead style={{color:"white", textAlign: "center"}}>
-                                            <tr className=" bg-dark" style={{color:"white", fontSize: "16px"}}>
-                                                <th scope="col-2">NAME</th>
-                                                <th scope="col-2">DATE</th>
-                                                <th scope="col-2">ADDRESS</th>
-                                                <th scope="col-2">RESOURCES</th>
-                                            </tr>
-                                        </thead>
-                                        
-                                        <tbody>
-                                            {this.state.posts.map(res => {
-                                                    return <tr key={res.name} scope="row" className="bg-success" >
-                                                        <td>{res.name}</td>
-                                                        <td>{res.date}</td>
-                                                        <td>{res.city}</td>
-                                                        <td>{res.info}</td>
-                                                    </tr>
-                                                })
-                                            }
-                                        </tbody>
-                                    </Table>
-                                </div>
+                                { this.state.posts.map(res => {
+                                    return  <ListGroup.Item style={{ backgroundColor: "black"}}>
+                                        <Card style={{width: "80%", backgroundColor: "black", color: "white", padding: "10px"}}>
+                                            <Card.Body>
+                                                <h4>{res.name}</h4>
+                                                <Card.Title>{res.city} on {res.date}</Card.Title>
+                                                <Card.Text>
+                                                    {res.info}
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                        <br/>
+                                </ListGroup.Item>
+                                })
+                                }
+                            </ListGroup>        
                         </div>
                     </section>
                 </div>;
