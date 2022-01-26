@@ -10,9 +10,7 @@ can be helpful to others in need.
 </p>
 We make a heartful request for everyone to please come forward and contribute here. Your contribution in a small way may help many in their battle against COVID-19.
 
-## Website - [Link](https://sadbhawna.netlify.app)
-
-# Our Team
+## Our Team
 | [Salokya Kumar](https://github.com/ksalokya)        | [Sayan Bhattacharyya](https://github.com/Sayan3990) | [Tisha Soumya](https://github.com/Tishasoumya-02) |
 | ----------- | ----------- | ----------- |
 
