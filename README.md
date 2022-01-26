@@ -12,9 +12,10 @@ We make a heartful request for everyone to please come forward and contribute he
 
 ## Website - [Link](https://sadbhawna.netlify.app)
 
-### All suggestions are welcomed and appreciated.We are constantly working and more releases will be made in the coming days.
-### Note - Please consult a doctor before using any shared resource(s). Team Sadbhawna won't take any responsibilty as the portal is open for all.
+# Our Team
+| [Salokya Kumar](https://github.com/ksalokya)        | [Sayan Bhattacharyya](https://github.com/Sayan3990) | [Tisha Soumya](https://github.com/Tishasoumya-02) |
+| ----------- | ----------- | ----------- |
 
-# Note - This was our stable-beta release considering time constraints, later we moved to to this awesome new UI. Check out our final project [here](https://github.com/TeamSadbhawna/portal).
+# Note - This was not our final release considering time constraints, later we moved to to this awesome new UI. Check out our final project [here](https://github.com/TeamSadbhawna/portal).
 
 
