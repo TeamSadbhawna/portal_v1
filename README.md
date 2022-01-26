@@ -14,6 +14,6 @@ We make a heartful request for everyone to please come forward and contribute he
 | [Salokya Kumar](https://github.com/ksalokya)        | [Sayan Bhattacharyya](https://github.com/Sayan3990) | [Tisha Soumya](https://github.com/Tishasoumya-02) |
 | ----------- | ----------- | ----------- |
 
-# Note - This was not our final release considering time constraints, later we moved to to this awesome new UI. Check out our final project [here](https://github.com/TeamSadbhawna/portal).
+# Note - This was not our final release. We released this version considering time constraints, later we moved to to this awesome new UI. Check out our final project [here](https://github.com/TeamSadbhawna/portal).
 
 
